@@ -1,0 +1,2035 @@
+{
+	"info": {
+		"_postman_id": "663fb744-695d-48da-9fbe-81fcc9064ab9",
+		"name": "mytask-wb-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34420824"
+	},
+	"item": [
+		{
+			"name": "Stocks Lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/stocks/list?page=5&per_page=10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"stocks",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "5"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Stocks Lists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/stocks/list?page=5&per_page=10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"stocks",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "5"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 10:01:11 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 5,\n    \"data\": [\n        {\n            \"id\": 66,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"1b1344eff6fcec54\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"712583015\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Казань\",\n            \"in_way_to_client\": 0,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 820845574,\n            \"subject\": \"dd6ad32ea8eeb9eb\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"362.00\",\n            \"discount\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"554f12836bd0e1b986b1b87b6c90442d\"\n        },\n        {\n            \"id\": 67,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"e00c20a104612df1\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"943872357\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Коледино\",\n            \"in_way_to_client\": 0,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 224690056,\n            \"subject\": \"bac0461335ae5efa\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"5155.00\",\n            \"discount\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"0293f2c13680a30cc00c7d8d82ea685d\"\n        },\n        {\n            \"id\": 68,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"1f7d809681f4fefa\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"174689831\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Электросталь\",\n            \"in_way_to_client\": 1,\n            \"in_way_from_client\": 0,\n            \"nm_id\": 550677776,\n            \"subject\": \"f216052f37a3fc56\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"2252.00\",\n            \"discount\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"4b4780a117c36c90ab4cc3d317fd61cb\"\n        },\n        {\n            \"id\": 69,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"73963abd2299ec22\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"905755160\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Новосибирск\",\n            \"in_way_to_client\": 1,\n            \"in_way_from_client\": 0,\n            \"nm_id\": 836646331,\n            \"subject\": \"bac0461335ae5efa\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"3254.00\",\n            \"discount\": \"3.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"fa0f53f7c5d6fff148c0dbfea36c5d23\"\n        },\n        {\n            \"id\": 70,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"73963abd2299ec22\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"905755160\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Казань\",\n            \"in_way_to_client\": 0,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 836646331,\n            \"subject\": \"bac0461335ae5efa\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"3254.00\",\n            \"discount\": \"3.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"b96628dd56f26034a6f5b1a30d96c97b\"\n        },\n        {\n            \"id\": 71,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"815d05309b9eac0e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"601693786\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Коледино\",\n            \"in_way_to_client\": 0,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 180450538,\n            \"subject\": \"442bfd3aa4779012\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"621.00\",\n            \"discount\": \"13.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"0ad7c3b819f79f35321ab630a1859941\"\n        },\n        {\n            \"id\": 72,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"815d05309b9eac0e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"601693786\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 2,\n            \"warehouse_name\": \"Казань\",\n            \"in_way_to_client\": 1,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 180450538,\n            \"subject\": \"442bfd3aa4779012\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"621.00\",\n            \"discount\": \"13.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"00a5f7942f0adcc8712a5c309269e520\"\n        },\n        {\n            \"id\": 73,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"815d05309b9eac0e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"601693786\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Электросталь\",\n            \"in_way_to_client\": 0,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 180450538,\n            \"subject\": \"442bfd3aa4779012\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"621.00\",\n            \"discount\": \"13.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"d9e5cea427ec4e78be38edeae66e247d\"\n        },\n        {\n            \"id\": 74,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"b35aac134ea148c7\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"791811610\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Коледино\",\n            \"in_way_to_client\": 0,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 977402319,\n            \"subject\": \"171d8b541e5f5cc1\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"879.00\",\n            \"discount\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"465831b270ec286a6792548deb237dc1\"\n        },\n        {\n            \"id\": 75,\n            \"date\": \"2025-01-05\",\n            \"last_change_date\": \"2024-06-11\",\n            \"supplier_article\": \"0ec9d0da012768d7\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"960197209\",\n            \"quantity\": 0,\n            \"is_supply\": 0,\n            \"is_realization\": 1,\n            \"quantity_full\": 1,\n            \"warehouse_name\": \"Подольск\",\n            \"in_way_to_client\": 0,\n            \"in_way_from_client\": 1,\n            \"nm_id\": 346286168,\n            \"subject\": \"dd6ad32ea8eeb9eb\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"sc_code\": \"149490916\",\n            \"price\": \"709.00\",\n            \"discount\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"f27a90137fe251a9ff0c4fa0a75a4c4b\"\n        }\n    ],\n    \"first_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=1\",\n    \"from\": 41,\n    \"last_page\": 11,\n    \"last_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=11\",\n    \"links\": [\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=4\",\n            \"label\": \"&laquo; Previous\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=1\",\n            \"label\": \"1\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=2\",\n            \"label\": \"2\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=3\",\n            \"label\": \"3\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=4\",\n            \"label\": \"4\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=5\",\n            \"label\": \"5\",\n            \"active\": true\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=6\",\n            \"label\": \"6\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=7\",\n            \"label\": \"7\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=8\",\n            \"label\": \"8\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=9\",\n            \"label\": \"9\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=10\",\n            \"label\": \"10\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=11\",\n            \"label\": \"11\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=6\",\n            \"label\": \"Next &raquo;\",\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=6\",\n    \"path\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list\",\n    \"per_page\": \"10\",\n    \"prev_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/stocks/list?page=4\",\n    \"to\": 50,\n    \"total\": 103\n}"
+				}
+			]
+		},
+		{
+			"name": "Incomes Lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/incomes/list?page=1&per_page=10&dateFrom={{dateFrom}}&dateTo={{dateTo}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"incomes",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						},
+						{
+							"key": "dateFrom",
+							"value": "{{dateFrom}}"
+						},
+						{
+							"key": "dateTo",
+							"value": "{{dateTo}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Incomes Lists Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/incomes/list?page=1&per_page=10&dateFrom=2024-01-01&dateTo=2024-01-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"incomes",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-01"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 14:49:07 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"842b439abad8bd8d\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"70316867\",\n            \"quantity\": \"12\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"514780166\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"136739a1760188b2af46505c14df8d64\"\n        },\n        {\n            \"id\": 2,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"782fdef3685e3038\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"626900206\",\n            \"quantity\": \"12\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"390959431\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"9b0cb3c91f19caca95acd03a1c413287\"\n        },\n        {\n            \"id\": 3,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"9bac3ebf6f3f3f7e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"170906407\",\n            \"quantity\": \"24\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"486396035\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"aac27fbdcdaa480b7f5465420631aa49\"\n        },\n        {\n            \"id\": 4,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"c84cfc2299c5085a\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"772933845\",\n            \"quantity\": \"6\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"925249296\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"fa364655df5ca0bac4f99e2c14e029f6\"\n        },\n        {\n            \"id\": 5,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"5948613e059e2036\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"482123729\",\n            \"quantity\": \"6\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"512183067\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"7508eba312fe57c572c699dc93858ca6\"\n        },\n        {\n            \"id\": 6,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"5370284fb0576355\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"688982106\",\n            \"quantity\": \"12\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"806586410\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"2aaec98c9a5fe68dec2343128b6686ab\"\n        },\n        {\n            \"id\": 7,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"35a4b778f62a49ff\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"432495154\",\n            \"quantity\": \"60\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"905559214\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"75b02905b0f9a2c9deb0498197a406b0\"\n        },\n        {\n            \"id\": 8,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"65e4616d9351858e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"593076056\",\n            \"quantity\": \"36\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"927138525\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"4647fb1ef3129bfb786a8e555791b595\"\n        },\n        {\n            \"id\": 9,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"004edf036192af67\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"960768599\",\n            \"quantity\": \"9\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"96634975\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"9cdd6266cbdd155f373dd3a494532966\"\n        },\n        {\n            \"id\": 10,\n            \"income_id\": \"23483200\",\n            \"number\": \"\",\n            \"date\": \"2024-09-25\",\n            \"last_change_date\": \"2024-09-27\",\n            \"supplier_article\": \"60d85ed12ea74956\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"118395640\",\n            \"quantity\": \"36\",\n            \"total_price\": \"0\",\n            \"date_close\": \"2024-09-27\",\n            \"warehouse_name\": \"Краснодар\",\n            \"nm_id\": \"678167538\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"094df4349e11f36e600d739d24c1697a\"\n        }\n    ],\n    \"first_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/incomes/list?page=1\",\n    \"from\": 1,\n    \"last_page\": 2,\n    \"last_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/incomes/list?page=2\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/incomes/list?page=1\",\n            \"label\": \"1\",\n            \"active\": true\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/incomes/list?page=2\",\n            \"label\": \"2\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/incomes/list?page=2\",\n            \"label\": \"Next &raquo;\",\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/incomes/list?page=2\",\n    \"path\": \"http://c321-102-88-109-233.ngrok-free.app/api/incomes/list\",\n    \"per_page\": \"10\",\n    \"prev_page_url\": null,\n    \"to\": 10,\n    \"total\": 20\n}"
+				}
+			]
+		},
+		{
+			"name": "Orders Lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/orders/list?page=1&per_page=10&dateFrom={{dateFrom}}&dateTo={{dateTo}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"orders",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						},
+						{
+							"key": "dateFrom",
+							"value": "{{dateFrom}}"
+						},
+						{
+							"key": "dateTo",
+							"value": "{{dateTo}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Orders Lists Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/list?page=1&per_page=10&dateFrom=2024-01-01&dateTo=2024-01-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-01"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:47:02 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"g_number\": \"3214668552299586393\",\n            \"date\": \"2024-10-11 20:25:44\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"98a04d47e0a1a528\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"651808987\",\n            \"total_price\": \"6935.9\",\n            \"discount_percent\": \"21\",\n            \"warehouse_name\": \"Краснодар\",\n            \"oblast\": \"Краснодарский край\",\n            \"income_id\": \"20806037\",\n            \"odid\": \"0\",\n            \"nm_id\": \"38490897\",\n            \"subject\": \"716cae14263ef4b7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"89edf2b23057232f\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"f7334d11075e79e3b66919cdae858d1a\"\n        },\n        {\n            \"id\": 2,\n            \"g_number\": \"2826651679490175957\",\n            \"date\": \"2024-10-11 20:34:59\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"0bd4024964e4645d\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"204428427\",\n            \"total_price\": \"1249.1499999999999\",\n            \"discount_percent\": \"38\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Владимирская область\",\n            \"income_id\": \"23495497\",\n            \"odid\": \"0\",\n            \"nm_id\": \"613791486\",\n            \"subject\": \"dd6ad32ea8eeb9eb\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"b5c615852ee57e3584e53fa21639a64e\"\n        },\n        {\n            \"id\": 3,\n            \"g_number\": \"2920707486840591469\",\n            \"date\": \"2024-10-11 10:34:13\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"5ef0a8ce970d2c87\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"380381241\",\n            \"total_price\": \"2341.35\",\n            \"discount_percent\": \"24\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Липецкая область\",\n            \"income_id\": \"23170961\",\n            \"odid\": \"0\",\n            \"nm_id\": \"440376223\",\n            \"subject\": \"f694ab2be55693c7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"f486d1bc7ccbbb35\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"db6f0775779b95448d5beb17b73cec9c\"\n        },\n        {\n            \"id\": 4,\n            \"g_number\": \"9783369802830515074\",\n            \"date\": \"2024-10-11 21:09:43\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"b35aac134ea148c7\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"791811610\",\n            \"total_price\": \"2476.7999999999997\",\n            \"discount_percent\": \"8\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Москва\",\n            \"income_id\": \"21856101\",\n            \"odid\": \"0\",\n            \"nm_id\": \"977402319\",\n            \"subject\": \"171d8b541e5f5cc1\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"634f81d1e2a54a3a8b0853c180971db8\"\n        },\n        {\n            \"id\": 5,\n            \"g_number\": \"4078403812362210533\",\n            \"date\": \"2024-10-11 19:23:10\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"8a306ee6ad3f9d2e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"391241595\",\n            \"total_price\": \"6207.05\",\n            \"discount_percent\": \"20\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Омская область\",\n            \"income_id\": \"23170961\",\n            \"odid\": \"0\",\n            \"nm_id\": \"2949472\",\n            \"subject\": \"716cae14263ef4b7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"89edf2b23057232f\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"68d90a312c84119d3f583c36b75325ae\"\n        },\n        {\n            \"id\": 6,\n            \"g_number\": \"6118134725383430874\",\n            \"date\": \"2024-10-11 19:40:36\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"c88c5018511d87a8\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"212416691\",\n            \"total_price\": \"5734.05\",\n            \"discount_percent\": \"17\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Воронежская область\",\n            \"income_id\": \"23170961\",\n            \"odid\": \"0\",\n            \"nm_id\": \"126373749\",\n            \"subject\": \"bac0461335ae5efa\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"c88460ca41fdbb82\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"9cfb23d88d3eab19aea8cd1b2edb832e\"\n        },\n        {\n            \"id\": 7,\n            \"g_number\": \"8974372727471430014\",\n            \"date\": \"2024-10-11 22:11:57\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"c88c5018511d87a8\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"212416691\",\n            \"total_price\": \"5734.05\",\n            \"discount_percent\": \"17\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Мурманская область\",\n            \"income_id\": \"23170961\",\n            \"odid\": \"0\",\n            \"nm_id\": \"126373749\",\n            \"subject\": \"bac0461335ae5efa\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"c88460ca41fdbb82\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"2c43f7cb95dddde023d44238d4dc5265\"\n        },\n        {\n            \"id\": 8,\n            \"g_number\": \"5078301461767388747\",\n            \"date\": \"2024-10-11 19:53:29\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"1b1344eff6fcec54\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"712583015\",\n            \"total_price\": \"655.75\",\n            \"discount_percent\": \"12\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Москва\",\n            \"income_id\": \"23495497\",\n            \"odid\": \"0\",\n            \"nm_id\": \"820845574\",\n            \"subject\": \"dd6ad32ea8eeb9eb\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"7ba4de727299d9685bb291307ea92d9a\"\n        },\n        {\n            \"id\": 9,\n            \"g_number\": \"5514031140279112435\",\n            \"date\": \"2024-10-11 21:26:12\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"bf9c78185d20af98\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"976033736\",\n            \"total_price\": \"2732.65\",\n            \"discount_percent\": \"35\",\n            \"warehouse_name\": \"Казань\",\n            \"oblast\": \"Кировская область\",\n            \"income_id\": \"23487524\",\n            \"odid\": \"0\",\n            \"nm_id\": \"977910555\",\n            \"subject\": \"716cae14263ef4b7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"89edf2b23057232f\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"19d05a94266ec3c48f4b331660d84168\"\n        },\n        {\n            \"id\": 10,\n            \"g_number\": \"373497038655298194\",\n            \"date\": \"2024-10-11 21:31:01\",\n            \"last_change_date\": \"2024-10-12\",\n            \"supplier_article\": \"a6400e46fa0d297c\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"360246081\",\n            \"total_price\": \"2403.7\",\n            \"discount_percent\": \"33\",\n            \"warehouse_name\": \"Электросталь\",\n            \"oblast\": \"Псковская область\",\n            \"income_id\": \"23787631\",\n            \"odid\": \"0\",\n            \"nm_id\": \"56460325\",\n            \"subject\": \"716cae14263ef4b7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"89edf2b23057232f\",\n            \"is_cancel\": \"0\",\n            \"cancel_dt\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"d19779d0db6cb546bc84249e4ef9f7b0\"\n        }\n    ],\n    \"first_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/orders/list?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/orders/list?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/orders/list?page=1\",\n            \"label\": \"1\",\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://c321-102-88-109-233.ngrok-free.app/api/orders/list\",\n    \"per_page\": \"10\",\n    \"prev_page_url\": null,\n    \"to\": 10,\n    \"total\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "Sales Lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/sales/list?page=1&per_page=10&dateFrom={{dateFrom}}&dateTo={{dateTo}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sales",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						},
+						{
+							"key": "dateFrom",
+							"value": "{{dateFrom}}"
+						},
+						{
+							"key": "dateTo",
+							"value": "{{dateTo}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sales Lists Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sales/list?page=1&per_page=10&dateFrom=2024-01-01&dateTo=2024-01-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sales",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-01"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:29:50 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"g_number\": \"91825587511466386488\",\n            \"date\": \"2024-09-11\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"fb6737e73da1a23d\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"739854416\",\n            \"total_price\": \"4502.099999999999\",\n            \"discount_percent\": \"20\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Электросталь\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Северо-Западный федеральный округ\",\n            \"region_name\": \"Санкт-Петербург\",\n            \"income_id\": \"21856101\",\n            \"sale_id\": \"S12758525000\",\n            \"odid\": \"\",\n            \"spp\": \"15\",\n            \"for_pay\": \"1482.35\",\n            \"finished_price\": \"1380\",\n            \"price_with_disc\": \"1675\",\n            \"nm_id\": \"221754399\",\n            \"subject\": \"ef6b8f13a0d097f3\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"ece62a90af398179\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"63b791ea6f0ad375f0812393cd32510c\"\n        },\n        {\n            \"id\": 2,\n            \"g_number\": \"96795034249878572167\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"0bd4024964e4645d\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"204428427\",\n            \"total_price\": \"1251.3\",\n            \"discount_percent\": \"21\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Казань\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Сибирский федеральный округ\",\n            \"region_name\": \"Красноярский край\",\n            \"income_id\": \"22277176\",\n            \"sale_id\": \"S12770247536\",\n            \"odid\": \"\",\n            \"spp\": \"18\",\n            \"for_pay\": \"407.13\",\n            \"finished_price\": \"365\",\n            \"price_with_disc\": \"460\",\n            \"nm_id\": \"613791486\",\n            \"subject\": \"dd6ad32ea8eeb9eb\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"b88950eb54d662d4e9707ba13a282271\"\n        },\n        {\n            \"id\": 3,\n            \"g_number\": \"4239938051530999167\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"1ebc90010e9f0d8c\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"942802682\",\n            \"total_price\": \"1578.1\",\n            \"discount_percent\": \"21\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Казань\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Сибирский федеральный округ\",\n            \"region_name\": \"Алтайский край\",\n            \"income_id\": \"21707275\",\n            \"sale_id\": \"S12770410461\",\n            \"odid\": \"\",\n            \"spp\": \"18\",\n            \"for_pay\": \"513.32\",\n            \"finished_price\": \"460\",\n            \"price_with_disc\": \"580\",\n            \"nm_id\": \"879714109\",\n            \"subject\": \"f694ab2be55693c7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"f486d1bc7ccbbb35\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"b868e5c7ce5a01bcdb141db466cf7685\"\n        },\n        {\n            \"id\": 4,\n            \"g_number\": \"3808193456998267367\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"815d05309b9eac0e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"601693786\",\n            \"total_price\": \"1537.25\",\n            \"discount_percent\": \"5\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Казань\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Сибирский федеральный округ\",\n            \"region_name\": \"Новосибирская область\",\n            \"income_id\": \"21707275\",\n            \"sale_id\": \"S12770513334\",\n            \"odid\": \"\",\n            \"spp\": \"18\",\n            \"for_pay\": \"600.89\",\n            \"finished_price\": \"528\",\n            \"price_with_disc\": \"679\",\n            \"nm_id\": \"180450538\",\n            \"subject\": \"442bfd3aa4779012\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"2b6556ee4053a260538fe2d070a8a5c1\"\n        },\n        {\n            \"id\": 5,\n            \"g_number\": \"8989687517596362702\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"c88c5018511d87a8\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"212416691\",\n            \"total_price\": \"5703.95\",\n            \"discount_percent\": \"12\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Казань\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Уральский федеральный округ\",\n            \"region_name\": \"Тюменская область\",\n            \"income_id\": \"22277176\",\n            \"sale_id\": \"S12770539022\",\n            \"odid\": \"\",\n            \"spp\": \"18\",\n            \"for_pay\": \"2066.52\",\n            \"finished_price\": \"1856\",\n            \"price_with_disc\": \"2335\",\n            \"nm_id\": \"126373749\",\n            \"subject\": \"bac0461335ae5efa\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"c88460ca41fdbb82\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"b331392b3c254850cae668f29ccee777\"\n        },\n        {\n            \"id\": 6,\n            \"g_number\": \"4649643232669621326\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"0ab177e30281d240\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"275286657\",\n            \"total_price\": \"2143.5499999999997\",\n            \"discount_percent\": \"10\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Казань\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Уральский федеральный округ\",\n            \"region_name\": \"Ханты-Мансийский автономный округ\",\n            \"income_id\": \"21323569\",\n            \"sale_id\": \"S12770639210\",\n            \"odid\": \"\",\n            \"spp\": \"19\",\n            \"for_pay\": \"793.81\",\n            \"finished_price\": \"704\",\n            \"price_with_disc\": \"897\",\n            \"nm_id\": \"304773881\",\n            \"subject\": \"716cae14263ef4b7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"89edf2b23057232f\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"7146e215714bb0c79ce447e59a76965e\"\n        },\n        {\n            \"id\": 7,\n            \"g_number\": \"98700626693067225540\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"f332be2d283046c7\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"7003431\",\n            \"total_price\": \"2752\",\n            \"discount_percent\": \"20\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Электросталь\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Центральный федеральный округ\",\n            \"region_name\": \"Московская область\",\n            \"income_id\": \"21856101\",\n            \"sale_id\": \"S12770697369\",\n            \"odid\": \"\",\n            \"spp\": \"18\",\n            \"for_pay\": \"906.24\",\n            \"finished_price\": \"797\",\n            \"price_with_disc\": \"1024\",\n            \"nm_id\": \"925181309\",\n            \"subject\": \"716cae14263ef4b7\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"a66c77274e96b48c\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"b985cee0368c96c150daf07c5de6a92c\"\n        },\n        {\n            \"id\": 8,\n            \"g_number\": \"91602711959461173044\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"6513df35d669cdca\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"136755593\",\n            \"total_price\": \"2425.2\",\n            \"discount_percent\": \"20\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Электросталь\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Дальневосточный федеральный округ\",\n            \"region_name\": \"Приморский край\",\n            \"income_id\": \"22346793\",\n            \"sale_id\": \"S12770745901\",\n            \"odid\": \"\",\n            \"spp\": \"11\",\n            \"for_pay\": \"798.22\",\n            \"finished_price\": \"779\",\n            \"price_with_disc\": \"902\",\n            \"nm_id\": \"208409090\",\n            \"subject\": \"ef6b8f13a0d097f3\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"ece62a90af398179\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"e4c1a2c842ee72d862f335d9a773834f\"\n        },\n        {\n            \"id\": 9,\n            \"g_number\": \"4513192709695043922\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"6513df35d669cdca\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"136755593\",\n            \"total_price\": \"2425.2\",\n            \"discount_percent\": \"20\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Электросталь\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Дальневосточный федеральный округ\",\n            \"region_name\": \"Приморский край\",\n            \"income_id\": \"22346793\",\n            \"sale_id\": \"S12770745902\",\n            \"odid\": \"\",\n            \"spp\": \"11\",\n            \"for_pay\": \"798.22\",\n            \"finished_price\": \"804\",\n            \"price_with_disc\": \"902\",\n            \"nm_id\": \"208409090\",\n            \"subject\": \"ef6b8f13a0d097f3\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"ece62a90af398179\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"68ca93fcb135101cf397893436f340fa\"\n        },\n        {\n            \"id\": 10,\n            \"g_number\": \"93850092729082485014\",\n            \"date\": \"2024-09-12\",\n            \"last_change_date\": \"2024-09-12\",\n            \"supplier_article\": \"65e4616d9351858e\",\n            \"tech_size\": \"66e7dff9f98764da\",\n            \"barcode\": \"593076056\",\n            \"total_price\": \"8064.65\",\n            \"discount_percent\": \"15\",\n            \"is_supply\": \"0\",\n            \"is_realization\": \"1\",\n            \"promo_code_discount\": \"\",\n            \"warehouse_name\": \"Казань\",\n            \"country_name\": \"Россия\",\n            \"oblast_okrug_name\": \"Дальневосточный федеральный округ\",\n            \"region_name\": \"Забайкальский край\",\n            \"income_id\": \"21707275\",\n            \"sale_id\": \"S12770848833\",\n            \"odid\": \"\",\n            \"spp\": \"19\",\n            \"for_pay\": \"2776.95\",\n            \"finished_price\": \"2475\",\n            \"price_with_disc\": \"3204\",\n            \"nm_id\": \"927138525\",\n            \"subject\": \"bac0461335ae5efa\",\n            \"category\": \"9f463620982b6cc9\",\n            \"brand\": \"e129baf5351375dd\",\n            \"is_storno\": \"\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"row_hash\": \"35971cc494d0d90669775472df4d35e4\"\n        }\n    ],\n    \"first_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/sales/list?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://c321-102-88-109-233.ngrok-free.app/api/sales/list?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://c321-102-88-109-233.ngrok-free.app/api/sales/list?page=1\",\n            \"label\": \"1\",\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://c321-102-88-109-233.ngrok-free.app/api/sales/list\",\n    \"per_page\": \"10\",\n    \"prev_page_url\": null,\n    \"to\": 10,\n    \"total\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "Stocks Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n        {\r\n            \"date\": \"2025-01-05\",\r\n            \"last_change_date\": \"2024-06-11\",\r\n            \"supplier_article\": \"14c51c2424aad784\",\r\n            \"tech_size\": \"66e7dff9f98764da\",\r\n            \"barcode\": \"284526200\",\r\n            \"quantity\": 0,\r\n            \"is_supply\": 1,\r\n            \"is_realization\": 0,\r\n            \"quantity_full\": 1,\r\n            \"warehouse_name\": \"Коледино\",\r\n            \"in_way_to_client\": 0,\r\n            \"in_way_from_client\": 1,\r\n            \"nm_id\": 246450799,\r\n            \"subject\": \"a988908c6c3cca9c\",\r\n            \"category\": \"9f463620982b6cc9\",\r\n            \"brand\": \"728663c27b76a87b\",\r\n            \"sc_code\": \"413256454\",\r\n            \"price\": \"999.00\",\r\n            \"discount\": \"0.00\",\r\n            \"created_at\": null,\r\n            \"updated_at\": null\r\n        }]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/stocks/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"stocks",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Stocks Add Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n        {\r\n            \"date\": \"2025-01-05\",\r\n            \"last_change_date\": \"2024-06-11\",\r\n            \"supplier_article\": \"14c51c2424aad784\",\r\n            \"tech_size\": \"66e7dff9f98764da\",\r\n            \"barcode\": \"284526200\",\r\n            \"quantity\": 0,\r\n            \"is_supply\": 1,\r\n            \"is_realization\": 0,\r\n            \"quantity_full\": 1,\r\n            \"warehouse_name\": \"Коледино\",\r\n            \"in_way_to_client\": 0,\r\n            \"in_way_from_client\": 1,\r\n            \"nm_id\": 246450799,\r\n            \"subject\": \"a988908c6c3cca9c\",\r\n            \"category\": \"9f463620982b6cc9\",\r\n            \"brand\": \"728663c27b76a87b\",\r\n            \"sc_code\": \"413256454\",\r\n            \"price\": \"999.00\",\r\n            \"discount\": \"0.00\",\r\n            \"created_at\": null,\r\n            \"updated_at\": null\r\n        }]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/stocks/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"stocks",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 09:58:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-06-11\",\n        \"supplier_article\": \"14c51c2424aad784\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"284526200\",\n        \"quantity\": 0,\n        \"is_supply\": 1,\n        \"is_realization\": 0,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 246450799,\n        \"subject\": \"a988908c6c3cca9c\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"728663c27b76a87b\",\n        \"sc_code\": \"413256454\",\n        \"price\": \"999.00\",\n        \"discount\": \"0.00\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"064551bf9030d9af040943ef153066dc\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Orders Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"g_number\": \"3214668552299586393\",\r\n            \"date\": \"2024-10-11 20:25:44\",\r\n            \"last_change_date\": \"2024-10-12\",\r\n            \"supplier_article\": \"98a04d47e0a1a528\",\r\n            \"tech_size\": \"66e7dff9f98764da\",\r\n            \"barcode\": \"651808987\",\r\n            \"total_price\": \"6935.9\",\r\n            \"discount_percent\": \"21\",\r\n            \"warehouse_name\": \"Краснодар\",\r\n            \"oblast\": \"Краснодарский край\",\r\n            \"income_id\": \"20806037\",\r\n            \"odid\": \"0\",\r\n            \"nm_id\": \"38490897\",\r\n            \"subject\": \"716cae14263ef4b7\",\r\n            \"category\": \"9f463620982b6cc9\",\r\n            \"brand\": \"89edf2b23057232f\",\r\n            \"is_cancel\": \"0\",\r\n            \"cancel_dt\": \"\"\r\n    }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/orders/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"orders",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Orders Add Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"g_number\": \"3214668552299586393\",\r\n            \"date\": \"2024-10-11 20:25:44\",\r\n            \"last_change_date\": \"2024-10-12\",\r\n            \"supplier_article\": \"98a04d47e0a1a528\",\r\n            \"tech_size\": \"66e7dff9f98764da\",\r\n            \"barcode\": \"651808987\",\r\n            \"total_price\": \"6935.9\",\r\n            \"discount_percent\": \"21\",\r\n            \"warehouse_name\": \"Краснодар\",\r\n            \"oblast\": \"Краснодарский край\",\r\n            \"income_id\": \"20806037\",\r\n            \"odid\": \"0\",\r\n            \"nm_id\": \"38490897\",\r\n            \"subject\": \"716cae14263ef4b7\",\r\n            \"category\": \"9f463620982b6cc9\",\r\n            \"brand\": \"89edf2b23057232f\",\r\n            \"is_cancel\": \"0\",\r\n            \"cancel_dt\": \"\"\r\n    }\r\n    ]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:49:40 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"g_number\": \"3214668552299586393\",\n        \"date\": \"2024-10-11 20:25:44\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"98a04d47e0a1a528\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"651808987\",\n        \"total_price\": \"6935.9\",\n        \"discount_percent\": \"21\",\n        \"warehouse_name\": \"Краснодар\",\n        \"oblast\": \"Краснодарский край\",\n        \"income_id\": \"20806037\",\n        \"odid\": \"0\",\n        \"nm_id\": \"38490897\",\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_cancel\": \"0\",\n        \"cancel_dt\": null,\n        \"row_hash\": \"a7d03636e14a1ac1ae7b761d84986132\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Incomes Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"income_id\": 23483200,\r\n        \"number\": \"\",\r\n        \"date\": \"2024-09-25\",\r\n        \"last_change_date\": \"2024-09-27\",\r\n        \"supplier_article\": \"389a6a116452bc3f\",\r\n        \"tech_size\": \"66e7dff9f98764da\",\r\n        \"barcode\": 979505904,\r\n        \"quantity\": 12,\r\n        \"total_price\": \"0\",\r\n        \"date_close\": \"2024-09-27\",\r\n        \"warehouse_name\": \"Краснодар\",\r\n        \"nm_id\": -83054245,\r\n        \"row_hash\": \"2163295d6da2f36318b90c46fe005e7b\"\r\n    }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/incomes/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"incomes",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Incomes Add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"income_id\": 23483200,\r\n        \"number\": \"\",\r\n        \"date\": \"2024-09-25\",\r\n        \"last_change_date\": \"2024-09-27\",\r\n        \"supplier_article\": \"389a6a116452bc3f\",\r\n        \"tech_size\": \"66e7dff9f98764da\",\r\n        \"barcode\": 979505904,\r\n        \"quantity\": 12,\r\n        \"total_price\": \"0\",\r\n        \"date_close\": \"2024-09-27\",\r\n        \"warehouse_name\": \"Краснодар\",\r\n        \"nm_id\": -83054245,\r\n        \"row_hash\": \"2163295d6da2f36318b90c46fe005e7b\"\r\n    }\r\n    ]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/incomes/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"incomes",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 14:58:03 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"income_id\": 23483200,\n        \"number\": null,\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"389a6a116452bc3f\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 979505904,\n        \"quantity\": 12,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Краснодар\",\n        \"nm_id\": -83054245,\n        \"row_hash\": \"f95d861d5e9cbb6c83dd7c4b363fdcfd\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Sales Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n            \"g_number\": \"91825587511466386488\",\r\n            \"date\": \"2024-09-11\",\r\n            \"last_change_date\": \"2024-09-12\",\r\n            \"supplier_article\": \"fb6737e73da1a23d\",\r\n            \"tech_size\": \"66e7dff9f98764da\",\r\n            \"barcode\": \"739854416\",\r\n            \"total_price\": \"4502.099999999999\",\r\n            \"discount_percent\": \"20\",\r\n            \"is_supply\": \"0\",\r\n            \"is_realization\": \"1\",\r\n            \"promo_code_discount\": \"\",\r\n            \"warehouse_name\": \"Электросталь\",\r\n            \"country_name\": \"Россия\",\r\n            \"oblast_okrug_name\": \"Северо-Западный федеральный округ\",\r\n            \"region_name\": \"Санкт-Петербург\",\r\n            \"income_id\": \"21856101\",\r\n            \"sale_id\": \"S12758525000\",\r\n            \"odid\": \"\",\r\n            \"spp\": \"15\",\r\n            \"for_pay\": \"1482.35\",\r\n            \"finished_price\": \"1380\",\r\n            \"price_with_disc\": \"1675\",\r\n            \"nm_id\": \"221754399000\",\r\n            \"subject\": \"ef6b8f13a0d097f3\",\r\n            \"category\": \"9f463620982b6cc9\",\r\n            \"brand\": \"ece62a90af398179\",\r\n            \"is_storno\": \"\",\r\n            \"created_at\": null,\r\n            \"updated_at\": null\r\n            }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sales/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sales",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sales Add Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n            \"g_number\": \"91825587511466386488\",\r\n            \"date\": \"2024-09-11\",\r\n            \"last_change_date\": \"2024-09-12\",\r\n            \"supplier_article\": \"fb6737e73da1a23d\",\r\n            \"tech_size\": \"66e7dff9f98764da\",\r\n            \"barcode\": \"739854416\",\r\n            \"total_price\": \"4502.099999999999\",\r\n            \"discount_percent\": \"20\",\r\n            \"is_supply\": \"0\",\r\n            \"is_realization\": \"1\",\r\n            \"promo_code_discount\": \"\",\r\n            \"warehouse_name\": \"Электросталь\",\r\n            \"country_name\": \"Россия\",\r\n            \"oblast_okrug_name\": \"Северо-Западный федеральный округ\",\r\n            \"region_name\": \"Санкт-Петербург\",\r\n            \"income_id\": \"21856101\",\r\n            \"sale_id\": \"S12758525000\",\r\n            \"odid\": \"\",\r\n            \"spp\": \"15\",\r\n            \"for_pay\": \"1482.35\",\r\n            \"finished_price\": \"1380\",\r\n            \"price_with_disc\": \"1675\",\r\n            \"nm_id\": \"221754399000\",\r\n            \"subject\": \"ef6b8f13a0d097f3\",\r\n            \"category\": \"9f463620982b6cc9\",\r\n            \"brand\": \"ece62a90af398179\",\r\n            \"is_storno\": \"\",\r\n            \"created_at\": null,\r\n            \"updated_at\": null\r\n            }\r\n    ]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sales/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sales",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:36:35 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"g_number\": \"91825587511466386488\",\n        \"date\": \"2024-09-11\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"fb6737e73da1a23d\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"739854416\",\n        \"total_price\": \"4502.099999999999\",\n        \"discount_percent\": \"20\",\n        \"is_supply\": \"0\",\n        \"is_realization\": \"1\",\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Электросталь\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Северо-Западный федеральный округ\",\n        \"region_name\": \"Санкт-Петербург\",\n        \"income_id\": \"21856101\",\n        \"sale_id\": \"S12758525000\",\n        \"odid\": null,\n        \"spp\": \"15\",\n        \"for_pay\": \"1482.35\",\n        \"finished_price\": \"1380\",\n        \"price_with_disc\": \"1675\",\n        \"nm_id\": \"221754399000\",\n        \"subject\": \"ef6b8f13a0d097f3\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"ece62a90af398179\",\n        \"is_storno\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"7d341aed26d68f61472a80f793105bb7\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Stocks Fetch and Store",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/stocks/fetchandstore",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"stocks",
+						"fetchandstore"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "8",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/stocks/fetchandstore?page=1&limit=10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"stocks",
+								"fetchandstore"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 11:19:54 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-02-06\",\n        \"supplier_article\": \"614a5194503283e8\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 264621174,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 2,\n        \"warehouse_name\": \"Электросталь\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 2,\n        \"nm_id\": 738317265,\n        \"subject\": \"6c9ba9d4a64a08c0\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"10974de38dfa215e\",\n        \"sc_code\": 413256454,\n        \"price\": \"821\",\n        \"discount\": \"0\",\n        \"row_hash\": \"200fc9323859ec7512bdbce1e18e644d\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-02-13\",\n        \"supplier_article\": \"6a887cb2d117e138\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 974232466,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Электросталь\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 451343607,\n        \"subject\": \"2f93fb30032e0937\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"10974de38dfa215e\",\n        \"sc_code\": 413256454,\n        \"price\": \"813\",\n        \"discount\": \"0\",\n        \"row_hash\": \"6b2bbc1212ef9263dcd112d3f6558fdf\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-02-16\",\n        \"supplier_article\": \"6a887cb2d117e138\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 974232466,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 451343607,\n        \"subject\": \"2f93fb30032e0937\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"10974de38dfa215e\",\n        \"sc_code\": 413256454,\n        \"price\": \"813\",\n        \"discount\": \"0\",\n        \"row_hash\": \"16a4f45b70a5e85715469a5da5d88307\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-02-22\",\n        \"supplier_article\": \"32dd2491349fe57b\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 978257775,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 3,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 1,\n        \"in_way_from_client\": 2,\n        \"nm_id\": 108016159,\n        \"subject\": \"565d9792be04595e\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e9800998ecf8427e\",\n        \"sc_code\": 413256454,\n        \"price\": \"1676\",\n        \"discount\": \"0\",\n        \"row_hash\": \"e07f0e72be4dfe9b2a8579134beeca92\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-02-22\",\n        \"supplier_article\": \"33d3ef0627a48428\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 188532407,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 645891538,\n        \"subject\": \"565d9792be04595e\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e9800998ecf8427e\",\n        \"sc_code\": 413256454,\n        \"price\": \"1330\",\n        \"discount\": \"0\",\n        \"row_hash\": \"6ee74d83e95ea8a33363d681aa7017dd\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-03-19\",\n        \"supplier_article\": \"7f0be08a339a17f9\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 104735175,\n        \"quantity\": 0,\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"quantity_full\": 8,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 8,\n        \"nm_id\": 678186849,\n        \"subject\": \"f7c87d7531eb9c9d\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"58b9df15b17afbc7\",\n        \"sc_code\": 149490916,\n        \"price\": \"183\",\n        \"discount\": \"0\",\n        \"row_hash\": \"31e47cd9c365bf46fdec4793fdb4b2f2\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-04-01\",\n        \"supplier_article\": \"c0d3c656da4bba2c\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 147017993,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 14044137,\n        \"subject\": \"c4d5099050643bb7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"dafebbb5c012a22b\",\n        \"sc_code\": 413256454,\n        \"price\": \"770\",\n        \"discount\": \"0\",\n        \"row_hash\": \"e5b4686e7e6ecc9e49953d99d4ca8533\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-05-27\",\n        \"supplier_article\": \"fd2233c765d88f8c\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 729224589,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Казань\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 977829404,\n        \"subject\": \"dd6ad32ea8eeb9eb\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"sc_code\": 413256454,\n        \"price\": \"942\",\n        \"discount\": \"0\",\n        \"row_hash\": \"0776a5bf6dbb0610ec4122f42fdb59fe\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-05-31\",\n        \"supplier_article\": \"c0d0c31a95f0b309\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 58035817,\n        \"quantity\": 0,\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Казань\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 664239186,\n        \"subject\": \"dd6ad32ea8eeb9eb\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"sc_code\": 149490916,\n        \"price\": \"302\",\n        \"discount\": \"0\",\n        \"row_hash\": \"0f4851578024512446a4ae2b9dff9e67\"\n    },\n    {\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-06-04\",\n        \"supplier_article\": \"a3a97859be76ba5e\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 146287168,\n        \"quantity\": 0,\n        \"is_supply\": true,\n        \"is_realization\": false,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Тула\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 755062387,\n        \"subject\": \"eb8c48f3518df032\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"a66c77274e96b48c\",\n        \"sc_code\": 413256454,\n        \"price\": \"7178\",\n        \"discount\": \"0\",\n        \"row_hash\": \"14e83bfe9474537d59ad9d8d8bddfa71\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Incomes Fetch and Store",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/incomes/fetchandstore?page=2&limit=10&dateFrom={{dateFrom}}&dateTo={{dateTo}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"incomes",
+						"fetchandstore"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "dateFrom",
+							"value": "{{dateFrom}}"
+						},
+						{
+							"key": "dateTo",
+							"value": "{{dateTo}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Incomes Fetch and Store Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/incomes/fetchandstore?page=2&limit=10&dateFrom=2024-01-01&dateTo=2024-01-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"incomes",
+								"fetchandstore"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-01"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 14:50:11 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"income_id\": 23483200,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"389a6a116452bc3f\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 979505904,\n        \"quantity\": 12,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Краснодар\",\n        \"nm_id\": -83054245,\n        \"row_hash\": \"2163295d6da2f36318b90c46fe005e7b\"\n    },\n    {\n        \"income_id\": 23483200,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"98a04d47e0a1a528\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 651808987,\n        \"quantity\": 6,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Краснодар\",\n        \"nm_id\": 38490897,\n        \"row_hash\": \"5b98bcd7433a7f59968debd9532552e9\"\n    },\n    {\n        \"income_id\": 23483200,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"a6400e46fa0d297c\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 360246081,\n        \"quantity\": 32,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Краснодар\",\n        \"nm_id\": 56460325,\n        \"row_hash\": \"fb7c898d67f58bf2a24b0fbd5bcb7a63\"\n    },\n    {\n        \"income_id\": 23483200,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"bcdec485f420030f\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 507169126,\n        \"quantity\": 24,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Краснодар\",\n        \"nm_id\": 799602696,\n        \"row_hash\": \"ceab9c233bfeae1d123142966defa909\"\n    },\n    {\n        \"income_id\": 23483200,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"ab8725804cbbd066\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 107597121,\n        \"quantity\": 6,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Краснодар\",\n        \"nm_id\": 1482607,\n        \"row_hash\": \"f110e85479edcb49ca80d90b69f030f1\"\n    },\n    {\n        \"income_id\": 23487524,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"bcdec485f420030f\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 507169126,\n        \"quantity\": 18,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Казань\",\n        \"nm_id\": 799602696,\n        \"row_hash\": \"be5f8e701b11f485afbe5b84291f6cdc\"\n    },\n    {\n        \"income_id\": 23487524,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"9e6ff1a3a81a3c5e\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 11184545,\n        \"quantity\": 48,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Казань\",\n        \"nm_id\": 366877803,\n        \"row_hash\": \"08c5839770516e4ed9ebe15664dcd9e6\"\n    },\n    {\n        \"income_id\": 23487524,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"815d05309b9eac0e\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 601693786,\n        \"quantity\": 40,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Казань\",\n        \"nm_id\": 180450538,\n        \"row_hash\": \"9f7de9a68440f51626ca1767808c8812\"\n    },\n    {\n        \"income_id\": 23487524,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"f1f104fae6d65eb1\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 137928016,\n        \"quantity\": 20,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Казань\",\n        \"nm_id\": 959794489,\n        \"row_hash\": \"59239e91baad0ffd525327ebd3b1645e\"\n    },\n    {\n        \"income_id\": 23487524,\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"1b1344eff6fcec54\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 712583015,\n        \"quantity\": 90,\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Казань\",\n        \"nm_id\": 820845574,\n        \"row_hash\": \"d942ccabb9e447de4bb4f6b963c7d222\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Orders Fetch and Store",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/orders/fetchandstore?page=2&limit=10&dateFrom={{dateFrom}}&dateTo={{dateTo}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"orders",
+						"fetchandstore"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "dateFrom",
+							"value": "{{dateFrom}}"
+						},
+						{
+							"key": "dateTo",
+							"value": "{{dateTo}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Orders Fetch and Store Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/fetchandstore?page=2&limit=10&dateFrom=2024-01-01&dateTo=2024-01-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"fetchandstore"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-01"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:45:30 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"g_number\": \"3214668552299586393\",\n        \"date\": \"2024-10-11 20:25:44\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"98a04d47e0a1a528\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 651808987,\n        \"total_price\": \"6935.9\",\n        \"discount_percent\": 21,\n        \"warehouse_name\": \"Краснодар\",\n        \"oblast\": \"Краснодарский край\",\n        \"income_id\": 20806037,\n        \"odid\": \"0\",\n        \"nm_id\": 38490897,\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"f7334d11075e79e3b66919cdae858d1a\"\n    },\n    {\n        \"g_number\": \"2826651679490175957\",\n        \"date\": \"2024-10-11 20:34:59\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"0bd4024964e4645d\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 204428427,\n        \"total_price\": \"1249.1499999999999\",\n        \"discount_percent\": 38,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Владимирская область\",\n        \"income_id\": 23495497,\n        \"odid\": \"0\",\n        \"nm_id\": 613791486,\n        \"subject\": \"dd6ad32ea8eeb9eb\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"b5c615852ee57e3584e53fa21639a64e\"\n    },\n    {\n        \"g_number\": \"2920707486840591469\",\n        \"date\": \"2024-10-11 10:34:13\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"5ef0a8ce970d2c87\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 380381241,\n        \"total_price\": \"2341.35\",\n        \"discount_percent\": 24,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Липецкая область\",\n        \"income_id\": 23170961,\n        \"odid\": \"0\",\n        \"nm_id\": 440376223,\n        \"subject\": \"f694ab2be55693c7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"f486d1bc7ccbbb35\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"db6f0775779b95448d5beb17b73cec9c\"\n    },\n    {\n        \"g_number\": \"9783369802830515074\",\n        \"date\": \"2024-10-11 21:09:43\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"b35aac134ea148c7\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 791811610,\n        \"total_price\": \"2476.7999999999997\",\n        \"discount_percent\": 8,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Москва\",\n        \"income_id\": 21856101,\n        \"odid\": \"0\",\n        \"nm_id\": 977402319,\n        \"subject\": \"171d8b541e5f5cc1\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"634f81d1e2a54a3a8b0853c180971db8\"\n    },\n    {\n        \"g_number\": \"4078403812362210533\",\n        \"date\": \"2024-10-11 19:23:10\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"8a306ee6ad3f9d2e\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 391241595,\n        \"total_price\": \"6207.05\",\n        \"discount_percent\": 20,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Омская область\",\n        \"income_id\": 23170961,\n        \"odid\": \"0\",\n        \"nm_id\": 2949472,\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"68d90a312c84119d3f583c36b75325ae\"\n    },\n    {\n        \"g_number\": \"6118134725383430874\",\n        \"date\": \"2024-10-11 19:40:36\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"c88c5018511d87a8\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 212416691,\n        \"total_price\": \"5734.05\",\n        \"discount_percent\": 17,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Воронежская область\",\n        \"income_id\": 23170961,\n        \"odid\": \"0\",\n        \"nm_id\": 126373749,\n        \"subject\": \"bac0461335ae5efa\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"c88460ca41fdbb82\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"9cfb23d88d3eab19aea8cd1b2edb832e\"\n    },\n    {\n        \"g_number\": \"8974372727471430014\",\n        \"date\": \"2024-10-11 22:11:57\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"c88c5018511d87a8\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 212416691,\n        \"total_price\": \"5734.05\",\n        \"discount_percent\": 17,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Мурманская область\",\n        \"income_id\": 23170961,\n        \"odid\": \"0\",\n        \"nm_id\": 126373749,\n        \"subject\": \"bac0461335ae5efa\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"c88460ca41fdbb82\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"2c43f7cb95dddde023d44238d4dc5265\"\n    },\n    {\n        \"g_number\": \"5078301461767388747\",\n        \"date\": \"2024-10-11 19:53:29\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"1b1344eff6fcec54\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 712583015,\n        \"total_price\": \"655.75\",\n        \"discount_percent\": 12,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Москва\",\n        \"income_id\": 23495497,\n        \"odid\": \"0\",\n        \"nm_id\": 820845574,\n        \"subject\": \"dd6ad32ea8eeb9eb\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"7ba4de727299d9685bb291307ea92d9a\"\n    },\n    {\n        \"g_number\": \"5514031140279112435\",\n        \"date\": \"2024-10-11 21:26:12\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"bf9c78185d20af98\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 976033736,\n        \"total_price\": \"2732.65\",\n        \"discount_percent\": 35,\n        \"warehouse_name\": \"Казань\",\n        \"oblast\": \"Кировская область\",\n        \"income_id\": 23487524,\n        \"odid\": \"0\",\n        \"nm_id\": 977910555,\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"19d05a94266ec3c48f4b331660d84168\"\n    },\n    {\n        \"g_number\": \"373497038655298194\",\n        \"date\": \"2024-10-11 21:31:01\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"a6400e46fa0d297c\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 360246081,\n        \"total_price\": \"2403.7\",\n        \"discount_percent\": 33,\n        \"warehouse_name\": \"Электросталь\",\n        \"oblast\": \"Псковская область\",\n        \"income_id\": 23787631,\n        \"odid\": \"0\",\n        \"nm_id\": 56460325,\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_cancel\": false,\n        \"cancel_dt\": null,\n        \"row_hash\": \"d19779d0db6cb546bc84249e4ef9f7b0\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Sales Fetch and Store",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/sales/fetchandstore?page=1&limit=10&dateFrom={{dateFrom}}&dateTo={{dateTo}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sales",
+						"fetchandstore"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "dateFrom",
+							"value": "{{dateFrom}}"
+						},
+						{
+							"key": "dateTo",
+							"value": "{{dateTo}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sales Fetch and Store Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sales/fetchandstore?page=1&limit=10&dateFrom=2024-01-01&dateTo=2024-01-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sales",
+								"fetchandstore"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-01"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:29:02 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"g_number\": \"91825587511466386488\",\n        \"date\": \"2024-09-11\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"fb6737e73da1a23d\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 739854416,\n        \"total_price\": \"4502.099999999999\",\n        \"discount_percent\": \"20\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Электросталь\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Северо-Западный федеральный округ\",\n        \"region_name\": \"Санкт-Петербург\",\n        \"income_id\": 21856101,\n        \"sale_id\": \"S12758525000\",\n        \"odid\": null,\n        \"spp\": \"15\",\n        \"for_pay\": \"1482.35\",\n        \"finished_price\": \"1380\",\n        \"price_with_disc\": \"1675\",\n        \"nm_id\": 221754399,\n        \"subject\": \"ef6b8f13a0d097f3\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"ece62a90af398179\",\n        \"is_storno\": null,\n        \"row_hash\": \"63b791ea6f0ad375f0812393cd32510c\"\n    },\n    {\n        \"g_number\": \"96795034249878572167\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"0bd4024964e4645d\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 204428427,\n        \"total_price\": \"1251.3\",\n        \"discount_percent\": \"21\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Казань\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Сибирский федеральный округ\",\n        \"region_name\": \"Красноярский край\",\n        \"income_id\": 22277176,\n        \"sale_id\": \"S12770247536\",\n        \"odid\": null,\n        \"spp\": \"18\",\n        \"for_pay\": \"407.13\",\n        \"finished_price\": \"365\",\n        \"price_with_disc\": \"460\",\n        \"nm_id\": 613791486,\n        \"subject\": \"dd6ad32ea8eeb9eb\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"is_storno\": null,\n        \"row_hash\": \"b88950eb54d662d4e9707ba13a282271\"\n    },\n    {\n        \"g_number\": \"4239938051530999167\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"1ebc90010e9f0d8c\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 942802682,\n        \"total_price\": \"1578.1\",\n        \"discount_percent\": \"21\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Казань\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Сибирский федеральный округ\",\n        \"region_name\": \"Алтайский край\",\n        \"income_id\": 21707275,\n        \"sale_id\": \"S12770410461\",\n        \"odid\": null,\n        \"spp\": \"18\",\n        \"for_pay\": \"513.32\",\n        \"finished_price\": \"460\",\n        \"price_with_disc\": \"580\",\n        \"nm_id\": 879714109,\n        \"subject\": \"f694ab2be55693c7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"f486d1bc7ccbbb35\",\n        \"is_storno\": null,\n        \"row_hash\": \"b868e5c7ce5a01bcdb141db466cf7685\"\n    },\n    {\n        \"g_number\": \"3808193456998267367\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"815d05309b9eac0e\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 601693786,\n        \"total_price\": \"1537.25\",\n        \"discount_percent\": \"5\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Казань\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Сибирский федеральный округ\",\n        \"region_name\": \"Новосибирская область\",\n        \"income_id\": 21707275,\n        \"sale_id\": \"S12770513334\",\n        \"odid\": null,\n        \"spp\": \"18\",\n        \"for_pay\": \"600.89\",\n        \"finished_price\": \"528\",\n        \"price_with_disc\": \"679\",\n        \"nm_id\": 180450538,\n        \"subject\": \"442bfd3aa4779012\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"is_storno\": null,\n        \"row_hash\": \"2b6556ee4053a260538fe2d070a8a5c1\"\n    },\n    {\n        \"g_number\": \"8989687517596362702\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"c88c5018511d87a8\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 212416691,\n        \"total_price\": \"5703.95\",\n        \"discount_percent\": \"12\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Казань\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Уральский федеральный округ\",\n        \"region_name\": \"Тюменская область\",\n        \"income_id\": 22277176,\n        \"sale_id\": \"S12770539022\",\n        \"odid\": null,\n        \"spp\": \"18\",\n        \"for_pay\": \"2066.52\",\n        \"finished_price\": \"1856\",\n        \"price_with_disc\": \"2335\",\n        \"nm_id\": 126373749,\n        \"subject\": \"bac0461335ae5efa\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"c88460ca41fdbb82\",\n        \"is_storno\": null,\n        \"row_hash\": \"b331392b3c254850cae668f29ccee777\"\n    },\n    {\n        \"g_number\": \"4649643232669621326\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"0ab177e30281d240\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 275286657,\n        \"total_price\": \"2143.5499999999997\",\n        \"discount_percent\": \"10\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Казань\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Уральский федеральный округ\",\n        \"region_name\": \"Ханты-Мансийский автономный округ\",\n        \"income_id\": 21323569,\n        \"sale_id\": \"S12770639210\",\n        \"odid\": null,\n        \"spp\": \"19\",\n        \"for_pay\": \"793.81\",\n        \"finished_price\": \"704\",\n        \"price_with_disc\": \"897\",\n        \"nm_id\": 304773881,\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_storno\": null,\n        \"row_hash\": \"7146e215714bb0c79ce447e59a76965e\"\n    },\n    {\n        \"g_number\": \"98700626693067225540\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"f332be2d283046c7\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 7003431,\n        \"total_price\": \"2752\",\n        \"discount_percent\": \"20\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Электросталь\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Центральный федеральный округ\",\n        \"region_name\": \"Московская область\",\n        \"income_id\": 21856101,\n        \"sale_id\": \"S12770697369\",\n        \"odid\": null,\n        \"spp\": \"18\",\n        \"for_pay\": \"906.24\",\n        \"finished_price\": \"797\",\n        \"price_with_disc\": \"1024\",\n        \"nm_id\": 925181309,\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"a66c77274e96b48c\",\n        \"is_storno\": null,\n        \"row_hash\": \"b985cee0368c96c150daf07c5de6a92c\"\n    },\n    {\n        \"g_number\": \"91602711959461173044\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"6513df35d669cdca\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 136755593,\n        \"total_price\": \"2425.2\",\n        \"discount_percent\": \"20\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Электросталь\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Дальневосточный федеральный округ\",\n        \"region_name\": \"Приморский край\",\n        \"income_id\": 22346793,\n        \"sale_id\": \"S12770745901\",\n        \"odid\": null,\n        \"spp\": \"11\",\n        \"for_pay\": \"798.22\",\n        \"finished_price\": \"779\",\n        \"price_with_disc\": \"902\",\n        \"nm_id\": 208409090,\n        \"subject\": \"ef6b8f13a0d097f3\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"ece62a90af398179\",\n        \"is_storno\": null,\n        \"row_hash\": \"e4c1a2c842ee72d862f335d9a773834f\"\n    },\n    {\n        \"g_number\": \"4513192709695043922\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"6513df35d669cdca\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 136755593,\n        \"total_price\": \"2425.2\",\n        \"discount_percent\": \"20\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Электросталь\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Дальневосточный федеральный округ\",\n        \"region_name\": \"Приморский край\",\n        \"income_id\": 22346793,\n        \"sale_id\": \"S12770745902\",\n        \"odid\": null,\n        \"spp\": \"11\",\n        \"for_pay\": \"798.22\",\n        \"finished_price\": \"804\",\n        \"price_with_disc\": \"902\",\n        \"nm_id\": 208409090,\n        \"subject\": \"ef6b8f13a0d097f3\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"ece62a90af398179\",\n        \"is_storno\": null,\n        \"row_hash\": \"68ca93fcb135101cf397893436f340fa\"\n    },\n    {\n        \"g_number\": \"93850092729082485014\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"65e4616d9351858e\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": 593076056,\n        \"total_price\": \"8064.65\",\n        \"discount_percent\": \"15\",\n        \"is_supply\": false,\n        \"is_realization\": true,\n        \"promo_code_discount\": null,\n        \"warehouse_name\": \"Казань\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Дальневосточный федеральный округ\",\n        \"region_name\": \"Забайкальский край\",\n        \"income_id\": 21707275,\n        \"sale_id\": \"S12770848833\",\n        \"odid\": null,\n        \"spp\": \"19\",\n        \"for_pay\": \"2776.95\",\n        \"finished_price\": \"2475\",\n        \"price_with_disc\": \"3204\",\n        \"nm_id\": 927138525,\n        \"subject\": \"bac0461335ae5efa\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e129baf5351375dd\",\n        \"is_storno\": null,\n        \"row_hash\": \"35971cc494d0d90669775472df4d35e4\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Stocks Search with nm_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/stocks/search?nm_id=808664320",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"stocks",
+						"search"
+					],
+					"query": [
+						{
+							"key": "nm_id",
+							"value": "808664320"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/stocks/search?nm_id=808664320",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"stocks",
+								"search"
+							],
+							"query": [
+								{
+									"key": "nm_id",
+									"value": "808664320"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 12:22:43 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 254,\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-06-11\",\n        \"supplier_article\": \"f001de34842bc627\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"57892476\",\n        \"quantity\": 0,\n        \"is_supply\": 1,\n        \"is_realization\": 0,\n        \"quantity_full\": 3,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 1,\n        \"in_way_from_client\": 2,\n        \"nm_id\": 808664320,\n        \"subject\": \"565d9792be04595e\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e9800998ecf8427e\",\n        \"sc_code\": \"413256454\",\n        \"price\": \"1227.00\",\n        \"discount\": \"0.00\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"bb2757a15fca69b5156a70ad2b14f7d8\"\n    },\n    {\n        \"id\": 255,\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-06-11\",\n        \"supplier_article\": \"f001de34842bc627\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"57892476\",\n        \"quantity\": 0,\n        \"is_supply\": 0,\n        \"is_realization\": 1,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Коледино\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 808664320,\n        \"subject\": \"565d9792be04595e\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e9800998ecf8427e\",\n        \"sc_code\": \"149490916\",\n        \"price\": \"1227.00\",\n        \"discount\": \"0.00\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"bd6db6d03c3d227cea8892b22301d879\"\n    },\n    {\n        \"id\": 256,\n        \"date\": \"2025-01-05\",\n        \"last_change_date\": \"2024-06-11\",\n        \"supplier_article\": \"f001de34842bc627\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"57892476\",\n        \"quantity\": 0,\n        \"is_supply\": 1,\n        \"is_realization\": 0,\n        \"quantity_full\": 1,\n        \"warehouse_name\": \"Электросталь\",\n        \"in_way_to_client\": 0,\n        \"in_way_from_client\": 1,\n        \"nm_id\": 808664320,\n        \"subject\": \"565d9792be04595e\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"e9800998ecf8427e\",\n        \"sc_code\": \"413256454\",\n        \"price\": \"1227.00\",\n        \"discount\": \"0.00\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"cf460337d40e8f188b7d07192f3ad269\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Sales Search with nm_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/sales/search?nm_id=3749",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sales",
+						"search"
+					],
+					"query": [
+						{
+							"key": "nm_id",
+							"value": "3749"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sales Search with nm_id Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/sales/search?nm_id=3749",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sales",
+								"search"
+							],
+							"query": [
+								{
+									"key": "nm_id",
+									"value": "3749"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:41:26 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"g_number\": \"8989687517596362702\",\n        \"date\": \"2024-09-12\",\n        \"last_change_date\": \"2024-09-12\",\n        \"supplier_article\": \"c88c5018511d87a8\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"212416691\",\n        \"total_price\": \"5703.95\",\n        \"discount_percent\": \"12\",\n        \"is_supply\": \"0\",\n        \"is_realization\": \"1\",\n        \"promo_code_discount\": \"\",\n        \"warehouse_name\": \"Казань\",\n        \"country_name\": \"Россия\",\n        \"oblast_okrug_name\": \"Уральский федеральный округ\",\n        \"region_name\": \"Тюменская область\",\n        \"income_id\": \"22277176\",\n        \"sale_id\": \"S12770539022\",\n        \"odid\": \"\",\n        \"spp\": \"18\",\n        \"for_pay\": \"2066.52\",\n        \"finished_price\": \"1856\",\n        \"price_with_disc\": \"2335\",\n        \"nm_id\": \"126373749\",\n        \"subject\": \"bac0461335ae5efa\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"c88460ca41fdbb82\",\n        \"is_storno\": \"\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"b331392b3c254850cae668f29ccee777\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Orders Search with nm_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/orders/search?nm_id=0897",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"orders",
+						"search"
+					],
+					"query": [
+						{
+							"key": "nm_id",
+							"value": "0897"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Orders Search with nm_id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/orders/search?nm_id=0897",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"search"
+							],
+							"query": [
+								{
+									"key": "nm_id",
+									"value": "0897"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:52:25 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"g_number\": \"3214668552299586393\",\n        \"date\": \"2024-10-11 20:25:44\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"98a04d47e0a1a528\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"651808987\",\n        \"total_price\": \"6935.9\",\n        \"discount_percent\": \"21\",\n        \"warehouse_name\": \"Краснодар\",\n        \"oblast\": \"Краснодарский край\",\n        \"income_id\": \"20806037\",\n        \"odid\": \"0\",\n        \"nm_id\": \"38490897\",\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_cancel\": \"0\",\n        \"cancel_dt\": \"\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"f7334d11075e79e3b66919cdae858d1a\"\n    },\n    {\n        \"id\": 11,\n        \"g_number\": \"3214668552299586393\",\n        \"date\": \"2024-10-11 20:25:44\",\n        \"last_change_date\": \"2024-10-12\",\n        \"supplier_article\": \"98a04d47e0a1a528\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"651808987\",\n        \"total_price\": \"6935.9\",\n        \"discount_percent\": \"21\",\n        \"warehouse_name\": \"Краснодар\",\n        \"oblast\": \"Краснодарский край\",\n        \"income_id\": \"20806037\",\n        \"odid\": \"0\",\n        \"nm_id\": \"38490897\",\n        \"subject\": \"716cae14263ef4b7\",\n        \"category\": \"9f463620982b6cc9\",\n        \"brand\": \"89edf2b23057232f\",\n        \"is_cancel\": \"0\",\n        \"cancel_dt\": \"\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"a7d03636e14a1ac1ae7b761d84986132\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Incomes Search with nm_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/incomes/search?nm_id=5147",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"incomes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "nm_id",
+							"value": "5147"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Stocks Search with nm_id Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/incomes/search?nm_id=5147",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"incomes",
+								"search"
+							],
+							"query": [
+								{
+									"key": "nm_id",
+									"value": "5147"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, X-Requested-With, Application"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jan 2025 15:05:56 GMT"
+						},
+						{
+							"key": "Host",
+							"value": "c321-102-88-109-233.ngrok-free.app"
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "102.88.36.140"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"income_id\": \"23483200\",\n        \"number\": \"\",\n        \"date\": \"2024-09-25\",\n        \"last_change_date\": \"2024-09-27\",\n        \"supplier_article\": \"842b439abad8bd8d\",\n        \"tech_size\": \"66e7dff9f98764da\",\n        \"barcode\": \"70316867\",\n        \"quantity\": \"12\",\n        \"total_price\": \"0\",\n        \"date_close\": \"2024-09-27\",\n        \"warehouse_name\": \"Краснодар\",\n        \"nm_id\": \"514780166\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"row_hash\": \"136739a1760188b2af46505c14df8d64\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		},
+		{
+			"key": "dateFrom",
+			"value": "2024-01-01",
+			"type": "string"
+		},
+		{
+			"key": "dateTo",
+			"value": "2024-01-01",
+			"type": "string"
+		}
+	]
+}
