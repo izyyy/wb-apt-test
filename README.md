@@ -1,6 +1,4 @@
 
----
-
 ## Документация API
 
 ### **Основные URL**  
@@ -148,12 +146,13 @@
 
 ---
 
+### **Коллекция Postman**  
+Вы можете найти и импортировать коллекцию Postman для этого API [здесь](https://github.com/izyyy/wb-apt-test/blob/main/mytask-wb-api.postman_collection.json).
+
 ---
 
-## API Documentation
 
-### **Overview**  
-This documentation provides information on how to interact with the application via both web and API endpoints. The API allows you to access and manage various data resources like incomes, sales, stocks, and orders programmatically. The web endpoints provide the same functionality, offering a user-friendly interface for accessing and managing data.
+## API Documentation English
 
 ### **Base URLs**  
 - **Web Base URL:** `{{web_base_url}}`  
@@ -164,7 +163,7 @@ This documentation provides information on how to interact with the application 
 ### **Endpoints**  
 
 #### **Incomes**  
-The "Incomes" endpoint provides access to operations related to managing income records, such as listing, adding, fetching, and searching for specific income records. 
+The "Incomes" endpoint provides access to operations related to managing income records, such as listing, adding, fetching, and searching specific income records.  
 
 1. **List Incomes**  
    **Web URL:** `{{web_base_url}}/incomes/list`  
@@ -200,19 +199,19 @@ The "Incomes" endpoint provides access to operations related to managing income 
    **Method:** `GET`  
    **Description:** Search for specific income records using a unique identifier (`nm_id`).  
    **Parameters:**  
-   - `nm_id` (required) - The unique identifier for the income record.  
+   - `nm_id` (required) - Unique identifier for the income record.  
 
 ---
 
 #### **Sales**  
-The "Sales" endpoint manages operations related to sales records, including listing, adding, fetching, and searching.
+The "Sales" endpoint handles operations related to sales records, including listing, adding, fetching, and searching.  
 
 1. **List Sales**  
    **Web URL:** `{{web_base_url}}/sales/list`  
    **API URL:** `{{base_url}}/api/sales/list`  
    **Method:** `GET`  
    **Description:** Retrieve a list of sales records with optional pagination and filtering by date range.  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 2. **Add Sales**  
    **Web URL:** `{{web_base_url}}/sales/add`  
@@ -225,26 +224,26 @@ The "Sales" endpoint manages operations related to sales records, including list
    **API URL:** `{{base_url}}/api/sales/fetchandstore`  
    **Method:** `GET`  
    **Description:** Fetch and store sales records with optional pagination and filtering by date range.  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 4. **Search Sales**  
    **Web URL:** `{{web_base_url}}/sales/search`  
    **API URL:** `{{base_url}}/api/sales/search`  
    **Method:** `GET`  
    **Description:** Search for specific sales records using a unique identifier (`nm_id`).  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 ---
 
 #### **Stocks**  
-The "Stocks" endpoint manages operations related to stock records, including listing, adding, fetching, and searching.
+The "Stocks" endpoint handles operations related to stock records, including listing, adding, fetching, and searching.  
 
 1. **List Stocks**  
    **Web URL:** `{{web_base_url}}/stocks/list`  
    **API URL:** `{{base_url}}/api/stocks/list`  
    **Method:** `GET`  
    **Description:** Retrieve a list of stock records with optional pagination and filtering by date range.  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 2. **Add Stocks**  
    **Web URL:** `{{web_base_url}}/stocks/add`  
@@ -257,26 +256,26 @@ The "Stocks" endpoint manages operations related to stock records, including lis
    **API URL:** `{{base_url}}/api/stocks/fetchandstore`  
    **Method:** `GET`  
    **Description:** Fetch and store stock records with optional pagination and filtering by date range.  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 4. **Search Stocks**  
    **Web URL:** `{{web_base_url}}/stocks/search`  
    **API URL:** `{{base_url}}/api/stocks/search`  
    **Method:** `GET`  
    **Description:** Search for specific stock records using a unique identifier (`nm_id`).  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 ---
 
 #### **Orders**  
-The "Orders" endpoint manages operations related to order records, including listing, adding, fetching, and searching.
+The "Orders" endpoint handles operations related to order records, including listing, adding, fetching, and searching.  
 
 1. **List Orders**  
    **Web URL:** `{{web_base_url}}/orders/list`  
    **API URL:** `{{base_url}}/api/orders/list`  
    **Method:** `GET`  
    **Description:** Retrieve a list of order records with optional pagination and filtering by date range.  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 2. **Add Orders**  
    **Web URL:** `{{web_base_url}}/orders/add`  
@@ -289,13 +288,16 @@ The "Orders" endpoint manages operations related to order records, including lis
    **API URL:** `{{base_url}}/api/orders/fetchandstore`  
    **Method:** `GET`  
    **Description:** Fetch and store order records with optional pagination and filtering by date range.  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 4. **Search Orders**  
    **Web URL:** `{{web_base_url}}/orders/search`  
    **API URL:** `{{base_url}}/api/orders/search`  
    **Method:** `GET`  
    **Description:** Search for specific order records using a unique identifier (`nm_id`).  
-   **Parameters:** Same as incomes.  
+   **Parameters:** Same as for incomes.  
 
 ---
+
+### **Postman Collection**  
+You can find and import the Postman collection for this API [here](https://github.com/izyyy/wb-apt-test/blob/main/mytask-wb-api.postman_collection.json).
