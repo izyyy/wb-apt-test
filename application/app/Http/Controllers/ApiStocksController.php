@@ -120,7 +120,8 @@ class ApiStocksController extends Controller
         $stocks = new Stocks();
 
         // Example: Filter stocks within a date range
-        $dateFrom = $request->query('dateFrom', now()->subDays(30)->toDateString()); // Default to the last 30 days if no date_from is provided
+        // $dateFrom = $request->query('dateFrom', now()->subDays(30)->toDateString()); // Default to the last 30 days if no date_from is provided
+        $dateFrom = $request->query('dateFrom', now()->toDateString()); // Default to the last 30 days if no date_from is provided
         $dateTo = $request->query('dateTo', now()->toDateString()); // Default to the current date if no date_to is provided
         // Fetching the per_page parameter for pagination
         $perPage = $request->query('per_page', 20); // Default to 15 if no per_page is provided
