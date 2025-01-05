@@ -20,9 +20,35 @@ use App\Http\Controllers\ApiOrdersController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $data = [
+        'Incomes' => [
+            'list' => 'https://e675-102-88-36-140.ngrok-free.app/incomes/list?page=1&per_page=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'add' => 'https://e675-102-88-36-140.ngrok-free.app/incomes/add',
+            'fetchandstore' => 'https://e675-102-88-36-140.ngrok-free.app/incomes/fetchandstore?page=1&limit=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'search' => 'https://e675-102-88-36-140.ngrok-free.app/incomes/search?nm_id=5147',
+        ],
+        'Sales' => [
+            'list' => 'https://e675-102-88-36-140.ngrok-free.app/sales/list?page=1&per_page=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'add' => 'https://e675-102-88-36-140.ngrok-free.app/sales/add',
+            'fetchandstore' => 'https://e675-102-88-36-140.ngrok-free.app/sales/fetchandstore?page=1&limit=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'search' => 'https://e675-102-88-36-140.ngrok-free.app/sales/search?nm_id=5147',
+        ],
+        'Stocks' => [
+            'list' => 'https://e675-102-88-36-140.ngrok-free.app/stocks/list?page=1&per_page=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'add' => 'https://e675-102-88-36-140.ngrok-free.app/stocks/add',
+            'fetchandstore' => 'https://e675-102-88-36-140.ngrok-free.app/stocks/fetchandstore?page=1&limit=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'search' => 'https://e675-102-88-36-140.ngrok-free.app/stocks/search?nm_id=5147',
+        ],
+        'Orders' => [
+            'list' => 'https://e675-102-88-36-140.ngrok-free.app/orders/list?page=1&per_page=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'add' => 'https://e675-102-88-36-140.ngrok-free.app/orders/add',
+            'fetchandstore' => 'https://e675-102-88-36-140.ngrok-free.app/orders/fetchandstore?page=1&limit=10&dateFrom=2024-09-01&dateTo=2024-09-30',
+            'search' => 'https://e675-102-88-36-140.ngrok-free.app/orders/search?nm_id=5147',
+        ],
+    ];
 
+    return view('routes', compact('data'));
+});
 
 //Stocks Routes
 Route::post('/stocks/add', [ApiStocksController::class, 'create']);
